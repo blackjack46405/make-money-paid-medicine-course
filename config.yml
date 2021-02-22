@@ -1,0 +1,18 @@
+title: 'Make money paid medicine '
+description: >-
+  with new medicad and Medicare  plan i have im co-pays  have gone up. 735..
+  -147 a little  less then 550.
+template:
+  repo: make-money-paid-medicine-template
+  name: make-money-paid-medicine
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
